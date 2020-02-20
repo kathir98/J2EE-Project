@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+}
+
+.page-divide {
+	background-color: transparent;
+	width: 100%;
+	height: 100vh;
+	display: table;
+}
+
+.page-left {
+	display: table-cell;
+	width: 60%;
+	background-color: green;
+	height: 100vh;
+	background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)), url(admin-bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.page-right {
+ background-color: transparent; 
+ display: table-cell;  
+}
+
+.container {
+    background-color: transparent;
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    margin: 10px;
+    width: 30%;
+}
+
+input[type="text"],
+input[type="password"]{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+select {
+	padding: 10px;
+}
