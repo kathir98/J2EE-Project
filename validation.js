@@ -24,6 +24,14 @@ function validform()
                 alert("Enter the 10 digit mobile number");
 		return false;
 	}
+	if(y4.length == 10){
+		for(var i = 0; i<10; i++){
+			if(y4.charCodeAt(i)<48 && y4.charCodeAt(i) > 57){
+				alert("Enter only numbers");
+				return false;
+			}
+		}
+	}
 	if(IsNaN(y4))
 	{
 		alert("Enter only the number as mobile number");
